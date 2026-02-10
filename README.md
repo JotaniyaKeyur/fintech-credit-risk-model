@@ -1,4 +1,4 @@
-# 🏦 Loan Default Prediction System (Production ML Project)
+# Loan Default Prediction System
 
 A **Loan Default Risk Prediction System** built using a
 **production-level Machine Learning pipeline**.
@@ -13,7 +13,7 @@ years using structured financial data from the **Give Me Some Credit
 
 ------------------------------------------------------------------------
 
-## 📌 Features
+## Features
 
 -   Production-level ML folder structure
 -   MICE (IterativeImputer) for advanced missing value handling
@@ -29,7 +29,7 @@ years using structured financial data from the **Give Me Some Credit
 
 ------------------------------------------------------------------------
 
-## 🧠 Target Variable
+## Target Variable
 
 `SeriousDlqin2yrs`
 
@@ -38,7 +38,7 @@ years using structured financial data from the **Give Me Some Credit
 
 ------------------------------------------------------------------------
 
-## 🛠 Tech Stack
+## Tech Stack
 
 -   Python
 -   Pandas
@@ -49,13 +49,9 @@ years using structured financial data from the **Give Me Some Credit
 -   Joblib
 -   Logging
 
-> No AutoML\
-> No Black-box wrappers\
-> Fully controlled ML pipeline
-
 ------------------------------------------------------------------------
 
-## 📂 Project Structure
+## Project Structure
 
     loan_default_prediction/
     │
@@ -85,13 +81,12 @@ years using structured financial data from the **Give Me Some Credit
     │
     ├── train.py
     ├── test.py
-    ├── predict_single.py
     ├── requirements.txt
     └── README.md
 
 ------------------------------------------------------------------------
 
-## 🔄 ML Pipeline Flow
+## ML Pipeline Flow
 
     IterativeImputer (MICE)
             ↓
@@ -101,16 +96,16 @@ years using structured financial data from the **Give Me Some Credit
             ↓
     XGBoost Classifier
 
-✔ Train/Validation split happens BEFORE fitting\
-✔ No data leakage\
-✔ Full preprocessing inside pipeline\
-✔ Production-ready model artifact
+Train/Validation split happens BEFORE fitting\
+No data leakage\
+Full preprocessing inside pipeline\
+Production-ready model artifact
 
 ------------------------------------------------------------------------
 
-## 🚀 How to Run This Project
+## How to Run This Project
 
-### 1️⃣ Create Virtual Environment
+### 1. Create Virtual Environment
 
 ``` bash
 python -m venv venv
@@ -118,13 +113,13 @@ source venv/bin/activate   # macOS / Linux
 venv\Scripts\activate    # Windows
 ```
 
-### 2️⃣ Install Dependencies
+### 2. Install Dependencies
 
 ``` bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Train the Model
+### 3. Train the Model
 
 ``` bash
 python train.py
@@ -137,7 +132,7 @@ ML pipeline - Evaluate performance - Save model to:
 
 ------------------------------------------------------------------------
 
-### 4️⃣ Run Batch Predictions
+### 4. Run Predictions
 
 ``` bash
 python test.py
@@ -145,18 +140,7 @@ python test.py
 
 ------------------------------------------------------------------------
 
-### 5️⃣ Run Single Customer Prediction
-
-``` bash
-python predict_single.py
-```
-
-Modify the input dictionary inside the script to test individual
-customer risk.
-
-------------------------------------------------------------------------
-
-## 📊 Model Evaluation Metrics
+## Model Evaluation Metrics
 
 -   Accuracy
 -   ROC-AUC (Primary Metric)
@@ -168,7 +152,7 @@ ROC-AUC is prioritized due to class imbalance.
 
 ------------------------------------------------------------------------
 
-## 📈 Why This Project Is Valuable
+## Why This Project Is Valuable
 
 -   Demonstrates real-world ML system design
 -   Shows understanding of imbalanced classification
@@ -181,25 +165,14 @@ This reflects how ML systems are built in fintech environments.
 
 ------------------------------------------------------------------------
 
-## 🔮 Future Improvements
-
--   Cross-validation support
--   Hyperparameter tuning (Optuna)
--   MLflow experiment tracking
--   FastAPI model deployment
--   Dockerization
--   CI/CD integration
-
-------------------------------------------------------------------------
-
-## 📚 Dataset
+## Dataset
 
 **Give Me Some Credit -- Kaggle (2011)**\
 Binary classification problem for consumer credit risk modeling.
 
 ------------------------------------------------------------------------
 
-## 👨‍💻 Author
+## Author
 
 Built as a portfolio project to demonstrate:
 
