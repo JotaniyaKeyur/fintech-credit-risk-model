@@ -2,7 +2,6 @@ import pandas as pd
 from src.config import RAW_DATA_DIR, DATA_FILE
 
 def load_data():
-
     file_path = RAW_DATA_DIR / DATA_FILE
 
     if not file_path.exists():
