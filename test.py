@@ -2,9 +2,7 @@ import joblib
 import pandas as pd
 from src.config import MODELS_DIR
 
-
 def main():
-
     model_path = MODELS_DIR / "loan_default_pipeline.pkl"
     pipeline = joblib.load(model_path)
 
@@ -40,7 +38,6 @@ def main():
         print("High Risk: Likely to Default")
     else:
         print("Low Risk: Unlikely to Default")
-
 
 if __name__ == "__main__":
     main()
