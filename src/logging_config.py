@@ -3,7 +3,6 @@ from pathlib import Path
 from src.config import BASE_DIR
 
 def setup_logging():
-
     log_dir = BASE_DIR / "logs"
     log_dir.mkdir(exist_ok=True)
 
@@ -17,5 +16,4 @@ def setup_logging():
             logging.StreamHandler()
         ]
     )
-
     return logging.getLogger()
