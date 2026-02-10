@@ -12,7 +12,6 @@ import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 
 def main():
-
     logger = setup_logging()
     logger.info("Starting training pipeline")
 
