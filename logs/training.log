@@ -1,0 +1,7 @@
+2026-02-10 21:38:48,635 | INFO | root | Starting training pipeline
+2026-02-10 21:38:48,739 | INFO | root | Training model...
+2026-02-10 21:38:50,716 | INFO | root | Evaluating model...
+2026-02-10 21:38:50,853 | INFO | root | Validation Accuracy: 0.9358
+2026-02-10 21:38:50,853 | INFO | root | Validation ROC-AUC: 0.8583
+2026-02-10 21:38:50,860 | INFO | root | Model saved to /Users/keyur/Desktop/loan_default_prediction/models/loan_default_pipeline.pkl
+2026-02-10 21:38:50,861 | INFO | root | Training completed successfully
