@@ -6,6 +6,7 @@ A **Loan Default Risk Prediction System** built using a
 This project predicts whether a borrower is likely to default within 2
 years using structured financial data from the **Give Me Some Credit
 (Kaggle)** dataset.
+Link: https://huggingface.co/datasets/Keyurjotaniya007/Give-Me-Some-Credit
 
 > Built as a real-world ML engineering practice project to demonstrate
 > proper pipeline design, data leakage prevention, imbalanced learning,
