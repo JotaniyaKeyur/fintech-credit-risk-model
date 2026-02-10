@@ -24,7 +24,7 @@ RANDOM_SEED = 42
 # Target column
 TARGET_COLUMN = "SeriousDlqin2yrs"
 
-# XGBoost best parameters
+# xgboost tuned parameters
 BEST_PARAMS = {
     "booster": "gbtree",
     "scale_pos_weight": 1.0844731956681208,
