@@ -7,9 +7,7 @@ from src.features.feature_engineering import FeatureEngineer
 from src.models.xgb_model import get_model
 from src.config import RANDOM_SEED
 
-
 def build_pipeline(feature_columns):
-
     pipeline = ImbPipeline(steps=[
         ("imputer", IterativeImputer(
             random_state=RANDOM_SEED,
@@ -21,5 +19,4 @@ def build_pipeline(feature_columns):
         ("smote", SMOTE(random_state=RANDOM_SEED)),
         ("model", get_model())
     ])
-
     return pipeline
